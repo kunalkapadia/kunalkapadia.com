@@ -11,53 +11,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?jjvgnj');
-  src:  url('fonts/icomoon.eot?jjvgnj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?jjvgnj') format('truetype'),
-    url('fonts/icomoon.woff?jjvgnj') format('woff'),
-    url('fonts/icomoon.svg?jjvgnj#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-medium:before {
-  content: "\e903";
-}
-.icon-paper-plane-o:before {
-  content: "\e901";
-}
-.icon-paper-plane:before {
-  content: "\e902";
-}
-.icon-github-alt:before {
-  content: "\e900";
-}
-.icon-instagram:before {
-  content: "\ea92";
-}
-.icon-twitter:before {
-  content: "\ea96";
-}
-
+/* Home screen */
 .home {
   display: flex;
   flex-direction: column;
@@ -85,11 +42,23 @@ body {
 .home__details__intro {
   font-size: 24px;
   text-align: center;
+  line-height: 42px;
+}
+
+.home__details__intro a {
+  text-decoration: none;
+}
+
+.home__details__intro a b {
+  color: black;
+  padding-bottom: 3px;
+  border-bottom: 2px solid black;
 }
 
 .home__details__social {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .home__details__social__icon {
@@ -113,16 +82,48 @@ body {
   text-decoration: none;
 }
 
-.home__details__links {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
+/* Fonts */
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?iwlohj');
+  src:  url('fonts/icomoon.eot?iwlohj#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?iwlohj') format('truetype'),
+    url('fonts/icomoon.woff?iwlohj') format('woff'),
+    url('fonts/icomoon.svg?iwlohj#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.home__details__links__item {
-  padding: 5px 10px;
-  border: 1px solid black;
-  background: bisque;
-  margin: 5px;
-  cursor: pointer;
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-medium:before {
+  content: "\e903";
+}
+.icon-paper-plane:before {
+  content: "\e901";
+}
+.icon-github-alt:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eaca";
 }
