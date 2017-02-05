@@ -20,6 +20,24 @@ a {
   text-decoration: none;
 }
 
+.next-page {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 /* Home screen */
 .home {
   display: flex;
@@ -29,6 +47,7 @@ a {
   width: 100%;
   min-height: 100vh;
   padding: 0 10%;
+  position: relative;
 }
 
 .home__avatar {
@@ -94,49 +113,68 @@ a {
   width: 100%;
   min-height: 100vh;
   padding: 0 10%;
+  position: relative;
 }
 
-.projects__heading  {
-
+/* Writing screen */
+.writing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+  position: relative;
 }
 
-.projects__list {
+/* Open Source */
+.oss {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Components */
+/* List */
+.list {
   list-style: none;
   counter-reset: section;
   padding-left: 0;
 }
 
-.projects__list__item {
+.list__item {
   position: relative;
   padding-left: 30px;
   font-size: 24px;
 }
 
-.projects__list__item:before {
+.list__item:before {
   counter-increment: section;
   content: "" counter(section) ". ";
   position: absolute;
   left: 0;
 }
 
-.projects__list__item__heading {
+.list__item__heading {
   margin-bottom: 0;
 }
 
-.projects__list__item__body {
+.list__item__body {
   margin-top: 15px;
   margin-bottom: 0;
-  line-height: 1.2;
+  line-height: 1.5;
+  font-size: 20px;
 }
 
 /* Fonts */
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?iwlohj');
-  src:  url('fonts/icomoon.eot?iwlohj#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?iwlohj') format('truetype'),
-    url('fonts/icomoon.woff?iwlohj') format('woff'),
-    url('fonts/icomoon.svg?iwlohj#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?miuuv9');
+  src:  url('fonts/icomoon.eot?miuuv9#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?miuuv9') format('truetype'),
+    url('fonts/icomoon.woff?miuuv9') format('woff'),
+    url('fonts/icomoon.svg?miuuv9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -156,6 +194,12 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-chevron-up:before {
+  content: "\e902";
+}
+.icon-chevron-down:before {
+  content: "\e904";
+}
 .icon-medium:before {
   content: "\e903";
 }

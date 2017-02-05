@@ -6,7 +6,7 @@
   <link rel="stylesheet" type="text/css" href="/index.css">
 </head>
 <body>
-  <div class="home">
+  <div class="home" id="home">
     <div class="home__avatar">
       <img src="/me.jpg">
     </div>
@@ -72,41 +72,73 @@
         </a>
       </div>
     </div>
+    <a href="#projects" class="next-page js-hashlink">
+      Projects
+      <i class="icon-chevron-down"></i>
+    </a>
   </div>
   <div class="projects" id="projects">
-    <h1 class="projects__heading">Projects</h1>
-    <ul class="projects__list">
-      <li class="projects__list__item">
-        <p class="projects__list__item__heading">
+    <h1>Projects</h1>
+    <ul class="list">
+      <li class="list__item">
+        <p class="list__item__heading">
           <a href="https://github.com/karanjthakkar/npm-telegram-bot">npm-telegram-bot</a>: 🕵️ Telegram bot to search for an npm package 🔍 🙌 
           [<a href="https://github.com/karanjthakkar/npm-telegram-bot#demo">Demo</a>]
         </p>
       </li>
-      <li class="projects__list__item">
-        <p class="projects__list__item__heading">
+      <li class="list__item">
+        <p class="list__item__heading">
           <a href="https://tweetify.io">Tweetify</a>: Twitter lists made fun
         </p>
-        <p class="projects__list__item__body">
+        <p class="list__item__body">
           This is an iOS App built using React Native. The server code involves Twitter OAuth using PassportJS, MongoDB for session and user data storage, Express for client API's. It is deployed on an Amazon EC2 instance. The code is open source. 
           <br />
           [<a href="https://github.com/karanjthakkar/lister-frontend">Server</a>] / [<a href="">iOS App</a>] / [<a href="https://github.com/karanjthakkar/lister-landing">Landing Page</a>]
         </p>
       </li>
-      <li class="projects__list__item">
-        <p class="projects__list__item__heading">
+      <li class="list__item">
+        <p class="list__item__heading">
           <a href="https://www.npmjs.com/package/simple-release">simple-release</a>: An npm module for managing release of nested projects
         </p>
       </li>
-      <li class="projects__list__item">
-        <p class="projects__list__item__heading">
+      <li class="list__item">
+        <p class="list__item__heading">
           <a href="https://github.com/karanjthakkar/twitter-growthhack-toolkit">twitter-growthhack-toolkit</a>: A set of scripts to help you grow on Twitter
         </p>
       </li>
     </ul>
+    <a href="#writing" class="next-page js-hashlink">
+      Writing
+      <i class="icon-chevron-down"></i>
+    </a>
   </div>
   <div class="writing" id="writing">
+    <h1>Writing</h1>
+    <ul class="list">
+      <li class="list__item">
+        <p class="list__item__heading">
+          <a href="https://medium.freecodecamp.com/going-https-on-amazon-ec2-ubuntu-14-04-with-lets-encrypt-certbot-on-nginx-696770649e76">Going HTTPS on Amazon EC2 (Ubuntu 14.04) with Lets Encrypt (Certbot) on Nginx</a>
+        </p>
+      </li>
+      <li class="list__item">
+        <p class="list__item__heading">
+          <a href="https://blog.markgrowth.com/how-i-grew-from-300-to-5k-followers-in-just-3-weeks-2436528da845">How I Grew From 300 to 5k Followers In Just 3 Weeks</a>
+        </p>
+        <p class="list__item__body">
+          This was also featured in <a href="http://m.huffpost.com/us/entry/7507762">Huffington Post</a> and led to me being interviewed on <a href="http://growthhacks.ninja/2015/06/growth-hacker-interview-karan-thakkar-developer-at-crowdfire/">Growthhackers.ninja</a> and <a href="http://www.marketingexperiments.com/blog/research-topics/lead-generation/from-300-to-5000-twitter-followers-in-three-weeks-an-interview-with-a-growth-hacker.html">Marketing Experiments</a> blog.
+        </p>
+      </li>
+    </ul>
+    <a href="#oss" class="next-page js-hashlink">
+      Open Source
+      <i class="icon-chevron-down"></i>
+    </a>
   </div>
   <div class="oss" id="oss">
+    <a href="#home" class="next-page js-hashlink">
+      <i class="icon-chevron-up"></i>
+      Home
+    </a>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
