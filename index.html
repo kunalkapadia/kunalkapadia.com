@@ -19,52 +19,101 @@
           target="_blank" 
           rel="noopener nofollow"
         ><b>Crowdfire</b></a>.
+        I <a href="#projects" class="js-hashlink" target="_blank" rel="noopener nofollow"><b>code</b></a> (most of the time), <a href="#writing" class="js-hashlink" target="_blank" rel="noopener nofollow"><b>write</b></a> (sometimes) and <a href="#oss" class="js-hashlink" target="_blank" rel="noopener nofollow"><b>contribute to open source</b></a> (whenever I can).
       </div>
       <div class="home__details__social">
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="https://github.com/karanjthakkar" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-github-alt"></i>
+          <i class="icon-github-alt home__details__social__icon"></i>
+          Github
         </a>
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="https://twitter.com/geekykaran" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-twitter"></i>
+          <i class="icon-twitter home__details__social__icon"></i>
+          Twitter
         </a>
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="https://medium.com/@karanjthakkar" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-medium"></i>
+          <i class="icon-medium home__details__social__icon"></i>
+          Medium
         </a>
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="https://linkedin.com/in/karanjthakkar" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-linkedin"></i>
+          <i class="icon-linkedin home__details__social__icon"></i>
+          Linkedin
         </a>
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="https://instagram.com/geekykaran" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-instagram"></i>
+          <i class="icon-instagram home__details__social__icon"></i>
+          Instagram
         </a>
-        <a class="home__details__social__icon"
+        <a class="home__details__social__name"
           href="mailto:karanjthakkar@gmail.com" 
           target="_blank" 
           rel="noopener nofollow"
         >
-          <i class="icon-paper-plane"></i>
+          <i class="icon-paper-plane home__details__social__icon"></i>
+          Email
         </a>
       </div>
     </div>
   </div>
+  <div class="projects" id="projects">
+    <h1 class="projects__heading">Projects</h1>
+    <ul class="projects__list">
+      <li class="projects__list__item">
+        <p class="projects__list__item__heading">
+          <a href="https://github.com/karanjthakkar/npm-telegram-bot">npm-telegram-bot</a>: 🕵️ Telegram bot to search for an npm package 🔍 🙌 
+          [<a href="https://github.com/karanjthakkar/npm-telegram-bot#demo">Demo</a>]
+        </p>
+      </li>
+      <li class="projects__list__item">
+        <p class="projects__list__item__heading">
+          <a href="https://tweetify.io">Tweetify</a>: Twitter lists made fun
+        </p>
+        <p class="projects__list__item__body">
+          This is an iOS App built using React Native. The server code involves Twitter OAuth using PassportJS, MongoDB for session and user data storage, Express for client API's. It is deployed on an Amazon EC2 instance. The code is open source. 
+          <br />
+          [<a href="https://github.com/karanjthakkar/lister-frontend">Server</a>] / [<a href="">iOS App</a>] / [<a href="https://github.com/karanjthakkar/lister-landing">Landing Page</a>]
+        </p>
+      </li>
+      <li class="projects__list__item">
+        <p class="projects__list__item__heading">
+          <a href="https://www.npmjs.com/package/simple-release">simple-release</a>: An npm module for managing release of nested projects
+        </p>
+      </li>
+      <li class="projects__list__item">
+        <p class="projects__list__item__heading">
+          <a href="https://github.com/karanjthakkar/twitter-growthhack-toolkit">twitter-growthhack-toolkit</a>: A set of scripts to help you grow on Twitter
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="writing" id="writing">
+  </div>
+  <div class="oss" id="oss">
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+  <script type="text/javascript">
+    $(document).smoothScroll({
+      'delegateSelector': '.js-hashlink'
+    });
+  </script>
 </body>
 </html>

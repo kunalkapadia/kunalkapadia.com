@@ -9,9 +9,15 @@ body, html {
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: black;
+  padding-bottom: 3px;
+  border-bottom: 2px solid black;
+  text-decoration: none;
 }
 
 /* Home screen */
@@ -19,6 +25,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
 }
 
 .home__avatar {
@@ -45,28 +55,16 @@ body {
   line-height: 42px;
 }
 
-.home__details__intro a {
-  text-decoration: none;
-}
-
-.home__details__intro a b {
-  color: black;
-  padding-bottom: 3px;
-  border-bottom: 2px solid black;
-}
-
 .home__details__social {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.home__details__social__icon {
-  width: 50px;
-  height: 50px;
+.home__details__social__name {
   border-radius: 25px;
   margin: 5px;
-  font-size: 24px;
+  font-size: 14px;
   background: bisque;
   display: flex;
   align-items: center;
@@ -74,12 +72,61 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+  padding: 10px 15px;
+  border-bottom: 0;
+}
+
+.home__details__social__icon {
+  margin-right: 5px
 }
  
 .home__details__social__icon:focus,
 .home__details__social__icon:visited {
   color: inherit;
   text-decoration: none;
+}
+
+/* Projects screen */
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 10%;
+}
+
+.projects__heading  {
+
+}
+
+.projects__list {
+  list-style: none;
+  counter-reset: section;
+  padding-left: 0;
+}
+
+.projects__list__item {
+  position: relative;
+  padding-left: 30px;
+  font-size: 24px;
+}
+
+.projects__list__item:before {
+  counter-increment: section;
+  content: "" counter(section) ". ";
+  position: absolute;
+  left: 0;
+}
+
+.projects__list__item__heading {
+  margin-bottom: 0;
+}
+
+.projects__list__item__body {
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 1.2;
 }
 
 /* Fonts */
