@@ -20,24 +20,6 @@ a {
   text-decoration: none;
 }
 
-.next-page {
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 0;
-  margin-top: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 12px;
-  line-height: 20px;
-}
-
 /* Home screen */
 .home {
   display: flex;
@@ -130,9 +112,91 @@ a {
 /* Open Source */
 .oss {
   display: flex;
+  flex-direction: column;
   width: 100%;
   min-height: 100vh;
+  padding: 0 10%;
   position: relative;
+}
+
+.repos, .prs {
+  list-style: none;
+  counter-reset: section;
+  padding-left: 0;
+}
+
+.repos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repos__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  width: calc(50% - 20px);
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.repos__item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.repos__item:nth-child(odd) {
+  margin-right: 10px;
+} 
+
+.repos__item:nth-child(even) {
+  margin-left: 10px;
+}
+
+.repos__item__stat {
+  font-size: 14px;
+}
+
+.repos__item__stat i {
+  margin-right: 2px;
+}
+
+.repos__item .repos__item__stat:first-of-type {
+  margin-right: 5px;
+}
+
+.repos__item__name {
+  font-size: 20px;
+  color: #5757e6;
+  border-bottom-color: #5757e6;
+}
+
+.repos__item__body {
+  font-size: 16px;
+  margin-top: 12px;
+  color: #333;
+}
+
+.repos__item__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+
+.repos__item__list__item {
+  font-size: 14px;
+  line-height: 20px;
+  color: #525252;
+}
+
+.repos__item__list__item a {
+  border-bottom: 0;
+  padding-bottom: 0;
+  color: #525252;
 }
 
 /* Components */
@@ -145,8 +209,9 @@ a {
 
 .list__item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 44px;
   font-size: 24px;
+  line-height: 40px;
 }
 
 .list__item:before {
@@ -154,6 +219,7 @@ a {
   content: "" counter(section) ". ";
   position: absolute;
   left: 0;
+  top: 6px;
 }
 
 .list__item__heading {
@@ -170,11 +236,11 @@ a {
 /* Fonts */
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?miuuv9');
-  src:  url('fonts/icomoon.eot?miuuv9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?miuuv9') format('truetype'),
-    url('fonts/icomoon.woff?miuuv9') format('woff'),
-    url('fonts/icomoon.svg?miuuv9#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?29rezi');
+  src:  url('fonts/icomoon.eot?29rezi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?29rezi') format('truetype'),
+    url('fonts/icomoon.woff?29rezi') format('woff'),
+    url('fonts/icomoon.svg?29rezi#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -194,20 +260,11 @@ a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-up:before {
-  content: "\e902";
+.icon-star:before {
+  content: "\e906";
 }
-.icon-chevron-down:before {
-  content: "\e904";
-}
-.icon-medium:before {
-  content: "\e903";
-}
-.icon-paper-plane:before {
-  content: "\e901";
-}
-.icon-github-alt:before {
-  content: "\e900";
+.icon-fork:before {
+  content: "\e905";
 }
 .icon-instagram:before {
   content: "\ea92";
@@ -217,4 +274,19 @@ a {
 }
 .icon-linkedin:before {
   content: "\eaca";
+}
+.icon-chevron-up:before {
+  content: "\e902";
+}
+.icon-chevron-down:before {
+  content: "\e904";
+}
+.icon-medium:before {
+  content: "\e903";
+}
+.icon-email:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\e900";
 }
