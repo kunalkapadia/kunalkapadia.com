@@ -187,7 +187,7 @@ var html = oss.map(function(repo) {
   return (
     '<li class="repos__item">' +
         '<div class="repos__item__header">' +
-          '<a class="repos__item__name" href="' + repo.url + '">' +
+          '<a class="repos__item__name" href="' + repo.url + '" target="_blank" rel="noopener nofollow">' +
             repo.name +
           '</a>' +
           '<div>' +
@@ -206,7 +206,7 @@ var html = oss.map(function(repo) {
           repo.prs.map(function(pr) {
             return (
               '<li class="repos__item__list__item">' +
-                '- <a href="' + pr.url + '">' +
+                '- <a href="' + pr.url + '" target="_blank" rel="noopener nofollow">' +
                   pr.title +
                 '</a>' +
                 '&nbsp;[' + pr.state + ']' +
